@@ -351,13 +351,22 @@
 		$(this).blur();
 	});
 	
-	console.log("22222");
+	
 	/* Change languages*/
 	$('#lang_en').on("click", function(e){
-		console.log("1111");
 		e.preventDefault();
 		$('.lang-bg').addClass('hidden');
 		$('.lang-en').removeClass('hidden');
+		$('#lang_bg').removeClass('hidden');
+		$('#lang_en').addClass('hidden');
     });
+	$('#lang_bg').on("click", function(e){
+		e.preventDefault();
+		$('.lang-bg').removeClass('hidden');
+		$('.lang-en').addClass('hidden');
+		$('#lang_bg').addClass('hidden');
+		$('#lang_en').removeClass('hidden');
+    });
+	
 
 })(jQuery);

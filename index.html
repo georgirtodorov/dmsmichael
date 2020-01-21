@@ -6,19 +6,9 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="DMSMichael is a donation campaign to raise funds for treatment in the US.">
-    <meta name="author" content="Inovatik">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Aria - Business HTML Landing Page Template</title>
+    <title>#DMS Michael - Save Michael</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -30,7 +20,7 @@
 	<link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link style="background-color:black" rel="icon" href="images/icon_logo_2.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -42,8 +32,7 @@
             <div class="bounce3"></div>
         </div>
     </div>
-    <!-- end of preloader -->
-    
+    <!-- end of preloader -->    
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top top-nav-collapse" style="border-bottom: 5px solid #14bf98; padding-left: 30px;">
@@ -52,8 +41,9 @@
 
         <!-- Image Logo -->
         <a class="" href="index.html"><img src="images/logo_2.png" alt="alternative" style="width: 150px;"></a>
-        <a class="" id="lang_en" href="#"><img src="images/english-version.webp" alt="alternative1" style="width: 50px;"></a>
-		<div class="flag flag-us">USA</div>
+		<a href="#" id="lang_en" class="change_language">English</a>
+		<a href="#" id="lang_bg" class="change_language hidden">Български</a>
+		
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -64,10 +54,12 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">            
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll lang-bg" href="#my_story">Моята история <span class="sr-only">(current)</span></a>
+					<a class="nav-link page-scroll lang-en hidden" href="#my_story">My story <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
+                    <a class="nav-link page-scroll lang-bg" href="#diagnostic">Диагностициране</a>
+					<a class="nav-link page-scroll lang-en hidden" href="#diagnostic">Disease and diagnostic</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll lang-bg" href="#donations">Дарения</a>
@@ -106,7 +98,7 @@
     <!-- Header -->
 	<div class="row" style="padding-top: 167px; background-color:#113448">	
 		<div class="col-lg-6 hero-image">
-		    <header id="header" class="header">
+		    <header id="my_story" class="header">
 		        <div class="header-content">
 		            <div class="container">
 		                <div class="row">
@@ -127,7 +119,7 @@
 		</div>
 	<!-- Story in BG -->
 		<div class="col-lg-6 lang-bg" style="padding-top: 30px;">
-			<p style="color:white;padding-top: 50px;padding-left: 50px;">
+			<p style="color:white; padding-left: 50px; font-size: 15px;">
 				Здравейте, мили хора!<br>
 				<br>
 				Тук съм, за да ви запозная със съдбата на милото ни бебче Майкъл и чистосърдечно да ви помоля за подкрепа!<br>
@@ -142,11 +134,11 @@
 				След дълго и мъчително чакане Майкъл получи одобрение за лечение с медикамента „Спинраза“. <br>
 				На петмесечна възраст му поставиха първата инжекция, a до днешна дата поставените са вечe четири на брой.<br>
 				<br>
-				<!-- За съжаление, обаче, тази терапия не лекува, а само го поддържа и възпира прогреса на заболяването...<br> -->
+				За съжаление, обаче, тази терапия не лекува, а само го поддържа и възпира прогреса на заболяването...<br>
 			</p>
 			<div style="text-align: center;">
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong" style="background-color:#14bf98; color:white; float:center">
-		 			Прочетете цялата история
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong" style="background-color:#14bf98; color:white; float:center; margin-top: 20px; margin-bottom: 10px;">
+		 			Вижте цялата история
 				</button>
 			</div>
 			<!-- Modal -->
@@ -154,7 +146,7 @@
 			  <div class="modal-dialog modal-lg" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header"  style="background-color:yellow">
-			        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+			        <h5 class="modal-title" id="exampleModalLongTitle">Моята история</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
@@ -186,11 +178,20 @@
 					Днес това се случва на нас, утре може да се случи и на вас.
 					<br>Благодарим  Ви, че отделихте време, за да прочетете нашата история.
 			      </div>
-			      <div class="modal-footer" style="background-color:yellow">
-			        <div>
+			      <div class="modal-footer" style="background-color:yellow; justify-content:normal;">
+			        <div class="" style="float: left;">
 						<h3>БАНКОВИ СМЕТКИ</h3>
+						<p><b>
+						УниКредит Булбанк<br>
+						Майкъл Емилов Добрев<br>
+						IBAN: BG70 UNCR 7000 1523 8743 39<br>
+						BIC(SWIFT): UNCRBGSF<br>
+						<!-- <img src="images/unicredit.png" alt="alternative" style="width: 20%;">						-->
+						</b></p>
 					</div>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#015761">Затвори</button>
+					<br>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#015761;margin-left: auto !important; position: absolute; bottom: 2px; right: 2px;">Затвори</button>
+					
 			      </div>
 			    </div>
 			  </div>
@@ -200,7 +201,7 @@
 		<!-- end of Story BG -->
 		<!-- Story in GB -->
 		<div class="col-lg-6 lang-en hidden" style="padding-top: 30px;">
-			<p style="color:white;padding-top: 50px;padding-left: 50px;">
+			<p style="color:white;padding-left: 50px; font-size: 15px;">
 				ENNNNNNNNNNNNNN  Здравейте, мили хора!<br>
 				<br>
 				Тук съм, за да ви запозная със съдбата на милото ни бебче Майкъл и чистосърдечно да ви помоля за подкрепа!<br>
@@ -215,19 +216,19 @@
 				След дълго и мъчително чакане Майкъл получи одобрение за лечение с медикамента „Спинраза“. <br>
 				На петмесечна възраст му поставиха първата инжекция, a до днешна дата поставените са вечe четири на брой.<br>
 				<br>
-				<!-- За съжаление, обаче, тази терапия не лекува, а само го поддържа и възпира прогреса на заболяването...<br> -->
+				За съжаление, обаче, тази терапия не лекува, а само го поддържа и възпира прогреса на заболяването...<br>
 			</p>
 			<div style="text-align: center;">
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong" style="background-color:#14bf98; color:white; float:center">
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong-en" style="background-color:#14bf98; color:white; float:center; margin-top: 20px; margin-bottom: 10px;">
 		 			Read full story
 				</button>
 			</div>
 			<!-- Modal -->
-			<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal fade" id="exampleModalLong-en" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle-en" aria-hidden="true">
 			  <div class="modal-dialog modal-lg" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header"  style="background-color:yellow">
-			        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+			        <h5 class="modal-title" id="exampleModalLongTitle-en">My story</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
@@ -259,11 +260,20 @@
 					Днес това се случва на нас, утре може да се случи и на вас.
 					<br>Благодарим  Ви, че отделихте време, за да прочетете нашата история.
 			      </div>
-			      <div class="modal-footer" style="background-color:yellow">
-			        <div>
+			      <div class="modal-footer" style="background-color:yellow; justify-content:normal;">
+			        <div class="" style="float: left;">
 						<h3>БАНКОВИ СМЕТКИ</h3>
+						<p><b>
+						УниКредит Булбанк<br>
+						Майкъл Емилов Добрев<br>
+						IBAN: BG70 UNCR 7000 1523 8743 39<br>
+						BIC(SWIFT): UNCRBGSF<br>
+						<!-- <img src="images/unicredit.png" alt="alternative" style="width: 20%;">						-->
+						</b></p>
 					</div>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<br>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#015761;margin-left: auto !important; position: absolute; bottom: 2px; right: 2px;">Close</button>
+					
 			      </div>
 			    </div>
 			  </div>
@@ -273,7 +283,9 @@
 		<!-- end of Story GB -->			
 	</div>
     <!-- end of header -->
-    <!-- Documents -->  	
+    <!-- Documents -->
+	
+	  	
 	<!-- Lightbox -->
     <div id="epikriza" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div>
@@ -320,9 +332,9 @@
     <div class="basic-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2>Our Team Of Consultants</h2>
-                    <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                <div class="col-lg-12" id="diagnostic">
+                    <h2 class="lang-bg">За заболяването</h2>
+					<h2 class="lang-en hidden">Diagnostics</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -334,8 +346,8 @@
 	                            <a class="popup-with-move-anim" href="#epikriza"><div class="element-item-overlay"></div><img  class="img-fluid"src="images/epikriza.jpg" alt="alternative"></a>
 	                        </div>
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
+                        <p class="job-title lang-bg">Епикриза 1/2</p>						
+                        <p class="job-title lang-en hidden">Еpicrisis 1/2</p>
                     </div> 
                     <!-- end of document -->
 					<!-- Document -->
@@ -345,8 +357,8 @@
 	                            <a class="popup-with-move-anim" href="#epikriza2"><div class="element-item-overlay"></div><img  class="img-fluid"src="images/epikriza2.jpg" alt="alternative"></a>
 	                        </div>
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
+                        <p class="job-title lang-bg">Епикриза 2/2</p>
+                        <p class="job-title lang-en hidden">Еpicrisis 2/2</p>
                     </div> 
                     <!-- end of document -->
 					<!-- Document-->
@@ -356,8 +368,8 @@
 	                            <a class="popup-with-move-anim" href="#izsledvane"><div class="element-item-overlay"></div><img  class="img-fluid"src="images/izsledvane.jpg" alt="alternative"></a>
 	                        </div>
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
+                        <p class="job-title lang-bg">Генетично изследване I</p>
+                        <p class="job-title lang-en hidden">Genetic testing I</p>
                     </div> 
                     <!-- end of document -->
 					<!-- Document-->
@@ -367,8 +379,8 @@
 	                            <a class="popup-with-move-anim" href="#izsledvane2"><div class="element-item-overlay"></div><img  class="img-fluid"src="images/izsledvane2.jpg" alt="alternative"></a>
 	                        </div>
                         </div> <!-- end of image-wrapper -->
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
+                        <p class="job-title lang-bg">Генетично изследване II</p>
+                        <p class="job-title lang-en hidden">Genetic testing II</p>
                     </div> 
                     <!-- end of document -->
                 </div> <!-- end of col -->
