@@ -772,11 +772,12 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .hero-image {
-  background-image: url('../images/header-background.jpg');
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	  background-image: url('../images/Capture.jpg');
+	  background-size: contain;
+	  height: 100%;
+	  width: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
 }
 
 .header .header-content {
@@ -898,10 +899,8 @@ input[type='checkbox'] {
 /************************/
 /*     07. Services     */
 /************************/
-.cards-2 {
-	padding-top: 6.625rem;	
-	padding-bottom: 1.25rem;	
-	background-color: #113448;
+.cards-2 {		
+	background-color: white;
 }
 
 .cards-2 .section-title {
